@@ -10,6 +10,7 @@ contaCorrenteRicardo.sacar(100);
 
 // INSTANCIANDO O OBJETO_CONTA_POUPANCA_RICARDO 
 const contaPoupancaRicardo = new ContaPoupanca(1001, cliente1, 50);
+contaPoupancaRicardo.sacar(10);
 
 console.log(contaCorrenteRicardo);
 console.log(contaPoupancaRicardo);
