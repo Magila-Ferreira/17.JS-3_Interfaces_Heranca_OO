@@ -1,5 +1,10 @@
+// CLASSE ABSTRATA
 export class Conta {
     constructor(agencia, cliente, saldoInicial) {
+        if (this.constructor == Conta) {
+            throw new Error("Classe Abstrata! Não é possível instanciar um objeto para a classe Conta");
+        }
+
         this._agencia = agencia;
         this._cliente = cliente;
         this._saldo = saldoInicial;
@@ -19,10 +24,9 @@ export class Conta {
         return this._saldo;
     }
 
-    // COMPORTAMENTO PADRÃO_SACAR
+    // MÉTODO ABSTRATO
     sacar(valor) {
-        let taxa = 1;
-        return this._sacar(valor, taxa);
+        throw new Error("Método Abstrato! É preciso sobscrever o método dentro da classe que deseja usá-lo.");
     }
 
     _sacar(valor, taxa) {

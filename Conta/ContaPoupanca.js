@@ -5,4 +5,9 @@ export class ContaPoupanca extends Conta {
         // HERANÇA DAS PROPRIEDADES AGÊNCIA_CLIENTE_SALDO-INICIAL DA CLASSE_CONTA
         super(agencia, cliente, saldoInicial);
     }
+
+    sacar(valor) {
+        const taxa = 1.02;
+        return this._sacar(valor, taxa);
+    }
 }
