@@ -10,7 +10,7 @@ const cliente = new Cliente("Laís", 98542578914, "5684");
 
 // SENHAS CADASTRADAS - FUNCIONÁRIOS
 diretor.cadastrarSenha("2543");
-gerente.cadastrarSenha("1714");
+gerente.cadastrarSenha("1714"); // Senha incorreta: retorna o valor de clienteLogado_FALSE
 //cliente.cadastrarSenha("5684"); - Método cadastrarSenha não existe na CLASSE_CLIENTE
 //O PARÂMETRO_SENHA_CLIENTE é recebido diretamente na autenticação dos logins   
 
